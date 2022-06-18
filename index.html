@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="util/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Pomodoro App</title>
+</head>
+<body id="body">
+    <div class="container-fluid"><br>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 col-12" style="text-align: center;">
+                <h2>&#127813; Pomodoro App &#127813;</h2>
+            </div>
+        </div>
+    </div><br><br>
+    <hr>
+    <div class="container-fluid">
+        <div class="row mainContent">
+        	<div class="col-12 col-md-12 col-lg-12 mainContent">
+                <h3>Select your pomodoro or create your one...</h3>
+                <input type="button" class="myButton" value="25/5" onclick="cambiaTimer('25:00','5:00')">
+                <input type="button" class="myButton" value="35/7" onclick="cambiaTimer('35:00','7:00')">
+                <input type="button" class="myButton" value="50/10" onclick="cambiaTimer('50:00','10:00')">
+                <br>
+                <input type="text" class="myInput" id="yourTimer" placeholder=" Minutes of study..."><input type="text" class="myInput" id="yourPause" placeholder=" Minutes of pause...">
+                <input type="button" class="myButton" id="timerPersonalizzato"  value="Create your timer" onclick="cambiaTimer(document.getElementById('yourTimer').value+':00',document.getElementById('yourPause').value+':00')">
+            </div>        
+        </div>
+    </div>
+    <hr>
+    <br><br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-12 mainContent">
+                <h1 class="timer" id="timer">25:00</h1>
+                <input type="button" class="myButton" id='startButton' value="START" onclick="startPomodoro()"><br>
+                <input type="button" class="myButton" value='STOP' onclick="stopPomodoro()">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script/script.js"></script>
+</html>

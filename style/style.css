@@ -1,0 +1,48 @@
+html, body{
+    height: 100%;
+    transition: 0.3s;
+    color: rgb(8, 8, 82);
+}
+
+.container{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.mainContent{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.myButton{
+    height: 40px;
+    width: 300px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: aquamarine;
+    border: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+input{
+    
+    border-radius: 15px;
+}
+
+.myButton:hover{
+    background-color: rgb(56, 255, 189);
+}
+
+.timer{
+    font-size: 70px;
+}
+
+.myInput{
+    height: 40px;
+    width: 300px;
+    background-color: aquamarine;
+    border: none;
+    margin: 10px;
+}
